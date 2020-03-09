@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minlength: 5,
+    minlength: 8,
     maxlength: 1024
   },
   isAdmin: Boolean
@@ -36,7 +36,7 @@ function validateUser(user) {
       .max(255)
       .required(),
     password: Joi.string()
-      .min(5)
+      .min(8)
       .max(1024)
       .required()
   }
