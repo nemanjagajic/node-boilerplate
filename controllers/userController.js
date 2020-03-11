@@ -45,7 +45,7 @@ exports.login = async (req, res) => {
   if (!validPassword) return res.status(400).send('Invalid email or password.')
 
   const token = user.generateAuthToken()
-  res.send({ token })
+  res.send({ token, email: user.email })
 }
 
 exports.loginWithGoogle = async (req, res) => {
@@ -65,7 +65,7 @@ exports.loginWithGoogle = async (req, res) => {
     }
 
     const token = user.generateAuthToken()
-    res.send({ token })
+    res.send({ token, email: data.email })
   } catch (err) {
     res.status(400).send(err.message)
   }
