@@ -7,10 +7,10 @@ const { PASSWORD_LENGTH } = require('../constants/userConstants')
 
 exports.register = async (req, res) => {
   const { error } = validate(req.body)
-  if (error) return res.status(400).send(error.details[0].message)
+  if (error) return res.status(400).send({ message: error.details[0].message })
 
   let user = await User.findOne({ email: req.body.email })
-  if (user) return res.status(400).send('User already registered.')
+  if (user) return res.status(400).send({ message: 'User already registered.' })
 
   const userData = {
     email: req.body.email,
@@ -36,13 +36,13 @@ async function registerUser(userData) {
 
 exports.login = async (req, res) => {
   const { error } = validate(req.body)
-  if (error) return res.status(400).send(error.details[0].message)
+  if (error) return res.status(400).send({ message: error.details[0].message })
 
   const user = await User.findOne({ email: req.body.email })
-  if (!user) return res.status(400).send('Invalid email or password.')
+  if (!user) return res.status(400).send({ message: 'Invalid email or password.' })
 
   const validPassword = await bcrypt.compare(req.body.password, user.password)
-  if (!validPassword) return res.status(400).send('Invalid email or password.')
+  if (!validPassword) return res.status(400).send({ message: 'Invalid email or password.' })
 
   const token = user.generateAuthToken()
   res.send({ token, email: user.email })
@@ -67,7 +67,7 @@ exports.loginWithGoogle = async (req, res) => {
     const token = user.generateAuthToken()
     res.send({ token, email: data.email })
   } catch (err) {
-    res.status(400).send(err.message)
+    res.status(400).send({ message: err.message })
   }
 }
 
@@ -78,6 +78,6 @@ exports.me = async (req, res) => {
       .select(['email'])
     res.send(user)
   } catch (err) {
-    res.status(400).send(err.message)
+    res.status(400).send({ message: err.message })
   }
 }
