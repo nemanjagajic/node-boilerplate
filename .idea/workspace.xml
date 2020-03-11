@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83868692-056d-4209-bf89-0c85b5cc76e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup/cors.js" beforeDir="false" afterPath="$PROJECT_DIR$/startup/cors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +77,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1583767774398" />
-    <state x="312" y="186" width="816" height="550" key="find.popup" timestamp="1583925324187">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="312" y="167" width="816" height="565" key="find.popup" timestamp="1583946290876">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="312" y="167" width="816" height="565" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1583946290876" />
     <state x="312" y="186" width="816" height="550" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1583925324187" />
     <state x="385" y="195" width="670" height="694" key="search.everywhere.popup" timestamp="1583935036449">
       <screen x="0" y="0" width="1440" height="900" />
