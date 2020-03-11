@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83868692-056d-4209-bf89-0c85b5cc76e8" name="Default Changelist" comment="" />
+    <list default="true" id="83868692-056d-4209-bf89-0c85b5cc76e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/googleConstants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/userConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -21,6 +34,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1YtdWjkc9Gez616r5ZAzVRMG9wU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,10 +42,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.6.0" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -63,14 +79,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1583767774398" />
-    <state x="312" y="186" width="816" height="550" key="find.popup" timestamp="1583770928405">
+    <state x="312" y="186" width="816" height="550" key="find.popup" timestamp="1583925324187">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="312" y="186" width="816" height="550" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1583770928405" />
-    <state x="385" y="195" width="670" height="694" key="search.everywhere.popup" timestamp="1583773001931">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="312" y="186" width="816" height="550" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1583925324187" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1583929353046">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="385" y="195" width="670" height="694" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583773001931" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583770674267" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583929353046" />
   </component>
 </project>

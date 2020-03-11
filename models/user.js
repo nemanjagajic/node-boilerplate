@@ -4,11 +4,9 @@ const mongoose = require('mongoose')
 const config = require('config')
 
 const userSchema = new mongoose.Schema({
-  username: {
+  email: {
     type: String,
-    required: true,
-    minlength: 1,
-    maxlength: 255
+    required: true
   },
   password: {
     type: String,
@@ -16,7 +14,10 @@ const userSchema = new mongoose.Schema({
     minlength: 8,
     maxlength: 1024
   },
-  isAdmin: Boolean
+  socialId: {
+    type: String,
+    default: null
+  }
 })
 
 userSchema.methods.generateAuthToken = function() {
@@ -31,9 +32,8 @@ const User = mongoose.model("User", userSchema)
 
 function validateUser(user) {
   const schema = {
-    username: Joi.string()
-      .min(1)
-      .max(255)
+    email: Joi.string()
+      .email()
       .required(),
     password: Joi.string()
       .min(8)
