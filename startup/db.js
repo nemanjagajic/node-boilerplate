@@ -1,9 +1,8 @@
 const mongoose = require('mongoose')
-const config = require('config')
 
 module.exports = function() {
-  const db = config.get('db')
-  
+  const db = process.env.DB
+
   mongoose.set('useNewUrlParser', true)
   mongoose.set('useFindAndModify', false)
   mongoose.set('useCreateIndex', true)
